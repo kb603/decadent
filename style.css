@@ -247,7 +247,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   color: #484848;
-  font-family: Merriweather, Georgia, Serif;
+  /* font-family: Merriweather, Georgia, Serif; */
 }
 body.no-scroll {
     overflow: hidden;
