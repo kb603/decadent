@@ -1,0 +1,8 @@
+.products-slider {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+}
+
+.product-item {
+    width: 30%
+}
