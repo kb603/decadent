@@ -51,6 +51,9 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+header{
+  background: rgb(253, 235, 238) ;
+}
 body {
   margin: 0;
   font-style: normal;
@@ -126,6 +129,7 @@ svg:not(:root) {
 }
 figure {
   margin: 1em 40px;
+  
 }
 hr {
   height: 0;
@@ -374,6 +378,49 @@ img {
   color: #646464;
   -webkit-transition: color .2s;
   transition: color .2s;
+}
+
+img{
+  width: 100%;
+}
+@media(min-width:700px){
+  html{
+      font-size: 90%;
+  }
+  .header{
+      padding: 2rem;
+  }
+}
+
+/* - Best Product
+------------------------------------------------------------- */
+.products{
+  /* width: calc(30.33% - 10px);  */
+  margin-bottom: 20px;
+}
+.product img{
+  width: 100%;
+  height: auto;
+
+}
+.product .name{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.product-image{
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.product-image img {
+  height: 100%;
+  object-fit: cover;
+} 
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: center; 
+  gap: 2%;
 }
 
 
