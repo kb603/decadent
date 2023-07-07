@@ -728,6 +728,20 @@ img:hover.grayscale {
   }
 }
 
+/* CSS for the order note section */
+.order-note {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 19px;
+  color: #252424;
+  font-style:italic;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
 
 /*--------------------------------------------------------------
 /** 5. Image Styles
