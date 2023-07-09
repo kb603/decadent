@@ -6480,6 +6480,12 @@ a.nav-link {
 .product-item a.product-image:hover img {
     transform: scale(1.1);
 }
+.product-image {
+  aspect-ratio: 1/1;
+}
+.product-image img {
+  height: 100%
+}
 
 /* -- Special Chocolate Section
 --------------------------------------------------------------*/
