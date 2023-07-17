@@ -473,7 +473,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.25;
 }
 .h5, h5  {
-  font-size: 1.3em;
+  font-size: 15px;
   line-height: 1.25;
 }
 h6, .h6 {
@@ -1618,13 +1618,13 @@ html {
 }
 
 .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
 
 .no-gutters {
   margin-right: 0;
@@ -6467,7 +6467,7 @@ a.nav-link {
   margin: 0;
 }
 .product-item .price{
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 .product-item a.product-image {
