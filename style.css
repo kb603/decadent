@@ -6528,7 +6528,7 @@ a.nav-link {
 }
 .special-items .item-content {
     display: flex;
-    height: 600px;
+    /* height: 600px; */
     align-items: center;
 } 
 special-items_content {
@@ -6933,6 +6933,7 @@ a.magnific-popup:hover .overlay {
   grid-template-columns: repeat(3, 30%); */
    justify-content: center; 
    gap: 4%;
+  
    
   /* column-gap: 4%; */
   /* row-gap: 3rem; */
