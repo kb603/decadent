@@ -6928,10 +6928,12 @@ a.magnific-popup:hover .overlay {
 }
 
 .product-list {
-  /* display: grid;
+  display: grid;
   padding: 2rem 5%;
   grid-template-columns: repeat(3, 30%); */
-  /* justify-content: center;  */
+   justify-content: center; 
+   gap: 4%;
+   
   /* column-gap: 4%; */
   /* row-gap: 3rem; */
 }
@@ -6939,10 +6941,11 @@ a.magnific-popup:hover .overlay {
 @media screen and (min-width: 700px ) {
   .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 16rem));
-    padding: 2rem 16%; 
+    /* grid-template-columns: repeat(auto-fit, minmax(30%, 16rem)); */
+    padding: 2rem 16%;
+    gap:2% ; 
     /* 
-    */
+
     column-gap: 5%;
     row-gap: 3rem;
     
