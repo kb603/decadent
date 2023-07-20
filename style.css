@@ -345,6 +345,10 @@ img {
   height: auto;
   vertical-align: middle;
 }
+.background{
+  object-fit: cover; 
+  max-height: 90vh;
+}
 ::selection {
   background: rgb(206 60 131);
   color: #fff;
@@ -388,64 +392,6 @@ img{
   }
 }
 
-/* - Best Product
-------------------------------------------------------------- */
-.slider {
-  background: linear-gradient(to right, rgb(236, 157, 194), rgb(237, 137, 185));
-  margin-top: -1rem;
-  padding: 4rem 0;
-}
-.products{
-  /* width: calc(30.33% - 10px);  */
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-rows: 1fr 8ex auto;
-  gap: 0.7rem;
-  align-items: flex-start;
-}
-.product-list {
-  display: grid;
-  padding: 2rem 8%;
-  grid-template-columns: repeat(3, 32%);
-  justify-content: center; 
-  gap: 4%;
-}
-
-@media screen and (min-width: 700px ) {
-  .product-list {
-    display: grid;
-    padding: 2rem 16%; 
-    gap: 8%;
-  }
-}
-.products > h5{
-  height: 4rex;
-  /* grid-row: 2/4; */
-
-  
-}
-  .products > a{
-  width: max-content;
-  padding: 0.5rem 2rem;
-  
-}
-.product img{
-  width: 100%;
-  aspect-ratio: 3/4;
-}
-.product .name{
-  margin-top: 10px;
-  font-weight: bold;
-}
-.product-image{
-  width: 100%;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-}
-.product-image img {
-  height: 100%;
-  object-fit: cover;
-} 
 
 
 
@@ -6465,10 +6411,9 @@ a.nav-link {
 /* -- Homepage Banner Section
 --------------------------------------------------------------*/
 #billboard .slider-item{
-  position: relative;
-  /*background: url(images/main-banner.jpg) top center;*/
-  /*height: 838px;*/
-  max-height: 800px;
+  /* position: relative; */
+  /* height: 838px; */
+  /* max-height: 800px; */
 }
 #billboard .text-content{
   position: absolute;
@@ -6562,9 +6507,16 @@ a.nav-link {
 }
 .product-image {
   aspect-ratio: 1/1;
+  overflow: hidden;
 }
 .product-image img {
-  height: 100%
+  height: 100%;
+  transition:scale 0.2s ease-in-out;
+
+}
+.product-image:hover img{
+  scale: 1.1;
+
 }
 
 /* -- Special Chocolate Section
@@ -6959,3 +6911,71 @@ a.magnific-popup:hover .overlay {
 .product-detail .button {
   margin: 0;
 }
+
+
+/* - Best Product
+------------------------------------------------------------- */
+.slider {
+  background: linear-gradient(to right, rgb(236, 157, 194), rgb(237, 137, 185));
+  margin-top: -1rem;
+  padding: 4rem 0;
+}
+.products{  
+  display: grid;
+  grid-template-rows: 1fr 8ex auto;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+
+.product-list {
+  /* display: grid;
+  padding: 2rem 5%;
+  grid-template-columns: repeat(3, 30%); */
+  /* justify-content: center;  */
+  /* column-gap: 4%; */
+  /* row-gap: 3rem; */
+}
+
+@media screen and (min-width: 700px ) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 16rem));
+    padding: 2rem 16%; 
+    /* 
+    */
+    column-gap: 5%;
+    row-gap: 3rem;
+    
+  }
+}
+
+.products > h5{
+  /* height: 4rem; */
+  /* grid-row: 2/4; */
+}
+
+  
+/* 
+  .products > a{
+  width: max-content;
+  padding: 0.5rem 2rem;
+  
+}
+.product img{
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+.product .name{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.product-image{
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.product-image img {
+  height: 100%;
+  object-fit: cover;
+} 
+ */
