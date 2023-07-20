@@ -376,6 +376,80 @@ img {
   transition: color .2s;
 }
 
+img{
+  width: 100%;
+}
+@media(min-width:700px){
+  html{
+      font-size: 90%;
+  }
+  .header{
+      padding: 2rem;
+  }
+}
+
+/* - Best Product
+------------------------------------------------------------- */
+.slider {
+  background: linear-gradient(to right, rgb(236, 157, 194), rgb(237, 137, 185));
+  margin-top: -1rem;
+  padding: 4rem 0;
+}
+.products{
+  /* width: calc(30.33% - 10px);  */
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 1fr 8ex auto;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+.product-list {
+  display: grid;
+  padding: 2rem 8%;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: center; 
+  gap: 4%;
+}
+
+@media screen and (min-width: 700px ) {
+  .product-list {
+    display: grid;
+    padding: 2rem 16%; 
+    gap: 8%;
+  }
+}
+.products > h5{
+  height: 4rex;
+  /* grid-row: 2/4; */
+
+  
+}
+  .products > a{
+  width: max-content;
+  padding: 0.5rem 2rem;
+  
+}
+.product img{
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+.product .name{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.product-image{
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.product-image img {
+  height: 100%;
+  object-fit: cover;
+} 
+
+
+
+
 
 /* - Clearfix
 ------------------------------------------------------------- */
@@ -454,7 +528,7 @@ img {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 600;
   line-height: 1.2;
-  color: #111;
+  color: #121212ce;
 }
 .h1, h1  {
   font-size: 3.5em;
@@ -471,14 +545,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .h4, h4  {
   font-size: 1.4em;
   line-height: 1.25;
+  color: #53c0b9;
 }
 .h5, h5  {
   font-size: 15px;
   line-height: 1.25;
+  color: #000000;
 }
 h6, .h6 {
   font-size: 0.9em;
   line-height: 1.4;
+  color: #4997ca;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 75%;
@@ -6424,6 +6501,8 @@ a.nav-link {
     opacity: 1;
 }
 
+
+
 @media (max-width: 575px) {
     #billboard h2{
       font-size: 1.7em;
@@ -6434,6 +6513,7 @@ a.nav-link {
     position: inherit;
   }
 }
+ 
 
 /* -- About Us Section
 --------------------------------------------------------------*/
@@ -6489,14 +6569,37 @@ a.nav-link {
 
 /* -- Special Chocolate Section
 --------------------------------------------------------------*/
-.special-items{
+ .special-items{
   background: url(images/special-item.jpg) no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
 }
 .special-items .item-content {
     display: flex;
     height: 600px;
     align-items: center;
+} 
+special-items_content {
+  display: grid;
+  gap: 2rem;}
+  */ 
+/* -- Special Chocolate Section
+--------------------------------------------------------------*/
+/* .special-items{
+  background: url(  images\special-item.jpg) no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
 }
+.special-items_content {
+  display: grid;
+  gap: 2rem;
+}
+.special-items .item-content {
+    display: flex;
+    min-height: 600px;
+    align-items: center;
+} */
+
 
 /* 11. Magnific Popup
 --------------------------------------------------------------*/
